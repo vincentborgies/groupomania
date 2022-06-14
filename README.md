@@ -46,7 +46,7 @@ Vous devez avoir Node js, et MySQL et MySQL Command Line Client installés sur v
 
 ## Démarrage du server et création de la base de données
 
-Entrer la commande `cd backend` pour vous rendre sur le dossier backend du projet puis `npm start` pour créer la base de données et lancer le serveur.
+Entrez la commande `cd backend` pour vous rendre sur le dossier backend du projet puis `npm start` pour créer la base de données et lancer le serveur.
 
 # Frontend
 
