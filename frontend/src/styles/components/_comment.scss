@@ -1,0 +1,29 @@
+@use '../utils/variables';
+
+.comment {
+  display: flex;
+  margin:5px 0 5px 0;
+  align-items:center;
+  &__profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  &__author {
+    font-weight: 500;
+  }
+  &__container {
+    background: rgb(87%, 87%, 87%);
+    border-radius: variables.$angle-cards;
+    padding: 5px;
+    max-width: 82%;
+    margin-right: 10px;
+  }
+  svg{
+    color:variables.$color3;
+    &:hover{
+      cursor:pointer;
+    }
+  }
+}

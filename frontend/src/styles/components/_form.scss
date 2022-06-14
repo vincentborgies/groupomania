@@ -1,0 +1,42 @@
+@use '../utils/mixins' as mixins;
+@use '../utils/variables' as variables;
+
+#form {
+  &__submit-button {
+    @include mixins.black-button;
+    margin-top: 20px;
+    width: 359px;
+    height: 50px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+  .label-hidden {
+    display: none;
+  }
+  textarea {
+    height: 150px;
+    width: 350px;
+    border: 2px solid variables.$color2;
+    font-family: arial, sans-serif;
+    border-radius: variables.$angle-input;
+    @media (max-width: 482px) {
+      width:282px;
+    }
+    @media (max-width: 400px) {
+      width:252px;
+    }
+    &::placeholder {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .input {
+    @include mixins.input;
+    &::placeholder {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}

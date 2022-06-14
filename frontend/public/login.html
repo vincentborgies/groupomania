@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="connect-page">
+      <div id="logo">
+        <img src="../images/icon-left-font.png" alt="logo groupomania" />
+      </div>
+      <div id="select-form">
+        <span class="select-form__button">SE CONNECTER</span>
+        <span class="select-form__button">S'INSCRIRE</span>
+      </div>
+      <!-- Login form -->
+      <form id="form" method="post">
+        <label class="label-hidden" for="email">Email</label><br />
+        <input
+          type="text"
+          placeholder="Email"
+          class="input"
+          id="form__email"
+          name="email"
+        /><br />
+        <label class="label-hidden" for="password">Mot de passe</label><br />
+        <input
+          type="text"
+          placeholder="Mot de passe"
+          class="input"
+          id="form__password"
+          name="password"
+        /><br />
+        <input id="form__submit-button" type="submit" value="SE CONNECTER" />
+      </form>
+    </div>
+  </body>
+</html>

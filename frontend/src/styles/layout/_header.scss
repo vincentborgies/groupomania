@@ -1,0 +1,105 @@
+@use '../utils/variables' as variables;
+
+#header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  width: 100%;
+  border-bottom: solid 1.5px #e5e5e5;
+  background: variables.$color1;
+  &__logo img {
+    @media (max-width: 500px) {
+      height: 40px;
+    }
+    @media (max-width: 400px) {
+      height: 30px;
+    }
+    height: 50px;
+    margin-left: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__menu-nav {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    @media (max-width: 400px) {
+      margin-right:80px
+    }
+    .svg-inline--fa {
+      @media (max-width: 528px) {
+        margin-left:30px
+      }
+      @media (max-width: 470px) {
+        height: 25px;
+        margin-left:20px
+      }
+      font-size: 30px;
+      color: variables.$color2;
+      margin-left: 40px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .fa-square-plus:hover {
+      cursor: pointer;
+    }
+  }
+  &__profile {
+    position: relative;
+    .dropdown-menu {
+      ul {
+        background-color: rgba(var(--d87, 255, 255, 255), 1);
+        box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0px;
+        border-radius: variables.$angle-input;
+        width: 170px;
+        padding: 0;
+      }
+      & a {
+        text-decoration: none;
+        color: variables.$color2;
+        font-weight: regular;
+        align-items: center;
+        padding-left: 10px;
+        cursor: pointer;
+        &:hover {
+          background: rgba(240, 240, 240, 0.8);
+        }
+        .dropdown-menu__icon {
+          height: 16px;
+          margin: 0px;
+          padding-right: 5px;
+        }
+        li {
+          padding: 10px 0px 10px 10px;
+        }
+      }
+    }
+    img {
+      @media (max-width: 528px) {
+        margin-left:30px
+      }
+      @media (max-width: 470px) {
+        height: 25px;
+        width:25px;
+        border-radius:12.5px;
+        margin-left: 20px;
+      }
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      margin-left: 40px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}

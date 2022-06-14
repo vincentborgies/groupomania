@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+</head>
+<body>
+
+  <header href="#" id="header">
+    <a id="header__logo">
+      <img src="../images/icon-left-font.png" alt="header-logo" />
+    </a>
+    <nav>
+      <ul id="header__menu-nav">
+        <li id="header__home">
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li id="header__newpost">
+          <a href="">
+            <i class="fa-solid fa-square-plus"></i>
+          </a>
+        </li>
+        <li id="header__profile">
+          <a href="">
+            <img src="https://picsum.photos/id/660/600/400" alt="" />
+          </a>
+          <div id="scrolling-menu">
+            <ul>
+              <li class="goto-profile-page">Mon profil</li>
+              <li class="log out">Déconnexion</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="app-body">
+    <div id="manage-post">
+      <div id="manage-post__header">MODIFIER LA PUBLICATION</div>
+        <form id="form" method="post">
+          <label class="label" for="title">Titre</label><br />
+          <input type="text" class="input" id="title" name="title" /><br />
+          <label class="label" for="content">Texte</label><br />
+          <textarea type="text" class="input" id="content" name="content" ></textarea><br />
+          <label class="label" for="media">Photo / Vidéo</label><br />
+          <input type="text" class="input" id="media" name="media" />
+    
+          <div class="import-from-computer">
+            <span>ou importer depuis l'ordinateur</span>
+            <span><i class="fa-solid fa-folder"></i></span><br>
+            <img src="https://picsum.photos/id/1020/600/400" alt="">
+          </div>
+  
+          <div class="display-media">
+  
+          </div>
+    
+          <input class="input" id="form__submit-button" type="submit" value="ENREGISTRER LES MODIFICATIONS" />
+        </form>
+    </div>
+    
+  </body>
+  </html>
+  
+    
+  </div>
+
+

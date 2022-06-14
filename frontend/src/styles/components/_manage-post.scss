@@ -1,0 +1,51 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+._Xt-75 {
+  display: flex;
+  align-items: center;
+  ._3bARu {
+    bottom: 0%;
+    top: auto;
+    border-radius: variables.$angle-cards;
+    padding: 30px;
+    @media (max-height: 730px) {
+      bottom: -10%;
+    }
+    @media (max-height: 670px) {
+      bottom: -15%;
+    }
+    @media (max-height: 660px) {
+      bottom: -20%;
+    }
+  }
+}
+
+#manage-post {
+  &__header {
+    font-weight: variables.$fontweight1;
+    font-size: 18px;
+    text-align: center;
+  }
+  label {
+    visibility: visible;
+  }
+  #close-modal:hover {
+    cursor: pointer;
+  }
+
+  .import-from-computer {
+    margin-top: 15px;
+    img {
+      width: 400px;
+      height: 200px;
+      border-radius: variables.$angle-cards;
+      margin-top: 30px;
+    }
+  }
+}
+
+//espace qui vient s'ajouter en dessous du body après ajout d'un post
+#mci-mirror {
+  display: none;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header href="#" id="header">
+      <a id="header__logo">
+        <img src="../images/icon-left-font.png" alt="header-logo" />
+      </a>
+      <nav>
+        <ul id="header__menu-nav">
+          <li id="header__home">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li id="header__newpost">
+            <a href="">
+              <i class="fa-solid fa-square-plus"></i>
+            </a>
+          </li>
+          <li id="header__profile">
+            <a href="">
+              <img src="https://picsum.photos/id/660/600/400" alt="" />
+            </a>
+            <div id="scrolling-menu">
+              <ul>
+                <li class="goto-profile-page">Mon profil</li>
+                <li class="log out">Déconnexion</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="app-body">
+      <div id="manage-post">
+        <div id="manage-post__header">
+          <p>NOUVELLE PUBLICATION</p>
+        </div>
+        <div class="manage-post__body">
+          <form id="form" method="post">
+            <label for="new-title">Titre</label><br />
+            <input
+              type="text"
+              class="input"
+              placeholder="Ajouter un titre"
+              id="new-title"
+              name="new-title"
+            /><br />
+            <label for="new-content">Texte</label><br />
+            <input
+              type="text"
+              class="input"
+              placeholder="Ajouter du texte"
+              id="new-content"
+              name="new-content"
+            />
+            <label for="new-media">Photo / Vidéo</label><br />
+            <input
+              type="text"
+              class="input"
+              placeholder="Ajouter l'URL de la photo/vidéo"
+              id="new-media"
+              name="new-media"
+            />
+  
+            <div class="import-from-computer">
+              <span>ou importer depuis l'ordinateur</span>
+              <span><i class="fa-solid fa-folder"></i></span>
+            </div>
+  
+            <input id="form__submit-button" type="submit" value="PUBLIER" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
