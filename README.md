@@ -17,13 +17,13 @@ Le backend a été créé avec **Node.js**, **Express.js** et **MySQL** comme ba
 
 ## Pré-requis
 
-Vous devez avoir Node js, et MySQL et MySQL command Line Client installés sur votre machine
+Vous devez avoir Node js, et MySQL et MySQL Command Line Client installés sur votre machine
 
 ## Installation
 
 - Dans le terminal de VSCODE, situez-vous dans le dossier `/backend`.
   <br />
-- Entrer la commande `npm install` pour installer toutes les dependences listées sur le fichier package.json
+- Entrez la commande `npm install` pour installer toutes les dependences listées sur le fichier package.json
   <br />
 - Dans le fichier `.env`, remplissez toutes les variables avec vos informations personnelles :
 
@@ -37,9 +37,9 @@ Vous devez avoir Node js, et MySQL et MySQL command Line Client installés sur v
 
   DB_HOST= votre nom d'hôte MySQL
 
-  FRONTEND_URL_URL= http://localhost:4200
+  FRONTEND_URL_URL= l'url de votre client
 
-  ACCESS_TOKEN_SECRET= générer une clé secrète pour votre token puis coller là ici
+  ACCESS_TOKEN_SECRET= générez une clé secrète pour votre token puis coller là ici
 
   PORT= le port sur lequel tourne votre serveur
   <br />

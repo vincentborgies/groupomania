@@ -58,7 +58,7 @@ const Post = (props) => {
       credentials: 'include',
     };
     fetch(
-      `${process.env.REACT_APP_API_URL}api/posts/${props.postData.id}/likes`,
+      `http://localhost:3000/api/posts/${props.postData.id}/likes`,
       requestOptions
     )
       .then(() => {
