@@ -44,6 +44,8 @@ Vous devez avoir Node js, et MySQL et MySQL Command Line Client installés sur v
   PORT= le port sur lequel tourne votre serveur
   <br />
 
+- A la racine du dossier `/backend`, créer un un dossier `uploads`
+
 ## Démarrage du server et création de la base de données
 
 Entrez la commande `cd backend` pour vous rendre sur le dossier backend du projet puis `npm start` pour créer la base de données et lancer le serveur.
